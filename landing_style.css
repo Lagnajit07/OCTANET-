@@ -1,0 +1,196 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+}
+
+#main {
+    width: 100%;
+    min-height: 100vh;
+}
+
+.top {
+    width: 100%;
+    min-height: 60vh;
+    background-image: url(https://w0.peakpx.com/wallpaper/390/568/HD-wallpaper-artificial-intelligence-background-vectors-stock-psd-vision.jpg);
+    background-position :center;
+    background-size: center;
+}
+.top.overlay{
+    position: relative;
+    width: 100%;
+    min-height: inherit;
+    background-color: rgb(0, 0, 0,0.295);
+}
+.text{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    padding: 0 10vh;
+    color: rgba(11, 10, 10, 0.845);
+    bottom: 5%;
+}
+.text h1{
+    font-weight: 600;
+    font-size: 4vw;
+    color: aqua;
+}
+.text.image{
+    background-image:url(https://images.app.goo.gl/UUSi7nPy3tNwa4yx7);
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    width: 220px;
+    color: aliceblue;
+}
+.rtext{
+    display: flex;
+    width: 25%;
+    align-items: center;
+    justify-content: space-between;
+}
+.rtext p{
+    font-size: 20px;
+    color:rgb(200, 255, 0);
+}
+.bottom{
+    display: flex;
+    width: 100%;
+    min-height: 40vh;
+}
+.b1{
+  width: 30%;
+  min-height: inherit;
+  background-image:url(https://img.freepik.com/premium-photo/best-desktop-wallpaper-backgrounds-1080p-2k-4k-5k-8k-hd-wallpapers_882954-31865.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.b1 h1{
+    text-align: center;
+    padding: 30px;
+    color: rgb(247, 103, 8);
+
+}
+.b1 p{
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+.b2{
+  width: 30%;
+  min-height: inherit;
+  display: flex;
+  flex-direction: column;
+  color: aliceblue;
+}
+.b2 .up{
+    width: 100%;
+    min-height: 20vh;
+    background-image: url(https://w0.peakpx.com/wallpaper/262/444/HD-wallpaper-artificial-intelligence-cyber-intelligence-thumbnail.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.b2 .up h1{
+    text-align: center;
+    padding: 30px;
+    color: aqua; 
+}
+.b2.up p{
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+.b2 .down{
+    width: 100%;
+    min-height: 30vh;
+    background-image: url(https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvcm00MDctMTA1LmpwZw.jpg);
+    background-size: cover;
+    background-position: center;
+    color: aqua;
+}
+.b2.down.overlay{
+    position: relative;
+    width: 100%;
+    min-height: 20vh;
+    background-color: rgba(255, 255, 255, 0.425);
+}
+.b3{
+  width: 40%;
+  min-height: inherit;
+  background-image: url(https://www.ucda.com/files/3117/);
+  background-size: cover;
+  background-position: center;
+}
+.b3 .overlay{
+    justify-content: right;
+    position: relative;
+    margin-left: 50%;
+    width: 50%;
+    height: 100%;
+    padding: 4vw 3vh;
+    color: blue;
+}
+.b3.overlay p{
+    padding: 1.2vh;
+   
+}
+@media(max-width:700px){
+    .rtext{
+        flex-direction: column;
+    }
+    .b3.overlay{
+        width: 200%;
+        margin-left: initial;
+    }
+}
+@media(max-width:500px){
+    .text{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .text h1{
+        font-size: 5vh;
+    }
+    .text.image{
+        height: 200px;
+        width: 140px;
+        margin-top: 20px;
+    }
+    .rtext{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .rtext p{
+        margin-top: 10px;
+    }
+    .icons{
+        margin-top: 10px;
+    }
+    .bottom{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .b1{
+        width: 100%;
+        min-height: 30vh;
+    }
+    .b2{
+        width: 100%;
+    }
+    .b2.up{
+        min-height: 30vh;
+    }
+    .b3{
+        width: 100%;
+        min-height: 30vh;
+        background-position: left;
+    }
+}
